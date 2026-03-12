@@ -1,6 +1,6 @@
 const axios = require("axios");
 
-const ML_SERVICE_URL = "http://localhost:8000/api/v1/site";
+const ML_SERVICE_URL = "https://spirulina-dss-ml.onrender.com";
 
 const analyzeSite = async (location) => {
   const response = await axios.get(`${ML_SERVICE_URL}/analyze`, {
